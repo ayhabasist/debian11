@@ -1,4 +1,4 @@
-# Instal dan Konfigurasi Web Server (apache2), php 7.4, dan MariaDB (database MySQL) Debian 11
+# Konfigurasi Web Server (apache2), php 7.4, dan MariaDB (database MySQL) Debian 11
 
 # Install Apache 2 
 $ apt update\
