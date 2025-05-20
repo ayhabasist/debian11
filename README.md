@@ -4,22 +4,22 @@
 # <h3>Download Debian 11 v.11.11.0</h3>
 link download : https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso
 
-# Tutrial instalasi Debian : 
+# <h3>Tutrial instalasi Debian : </h3>
 link : https://www.debian.org/doc/manuals/debian-handbook/sect.installation-steps.id.html
 
 <br><br>
-# Install Apache 2 
+# <h3>Install Apache 2 </h3>
 $ apt update\
 $ apt -y install apache2
 
-# Verifikasi instaltasi Apache
+# <h3> Verifikasi instaltasi Apache </h3>
 $ apache2 -version
 
-# Melihat Status Apache
+# <h3>Melihat Status Apache</h3>
 $ systemctl status apache2
 
 
-# Membuat Virtual Host
+# <h3>Membuat Virtual Host</h3>
 $ mkdir -p /var/www/demoapp.info/html \
 $ chown -R $USER:$USER /var/www/demoapp.info/html \
 $ chmod -R 755 /var/www/demoapp.info \
@@ -43,7 +43,7 @@ $ nano /etc/apache2/sites-available/demoapp.info.conf
 *tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
-# Mengaktifkan Virtual Host 
+# <h3>Mengaktifkan Virtual Host</h3> 
 $ a2ensite demoapp.info.conf --> enable host \
 $ a2dissite 000-default.conf --> --> disable host
 
@@ -61,7 +61,7 @@ $ sudo apache2ctl configtest
 buka browser dan ketikkan : \
 http://demoapp.info
 
-# Perintah pada apache
+# <h3>Perintah pada apache</h3>
 $ systemctl start apache2 --> menjalankan server web\
 $ systemctl stop apache2 --> mematikan server web\
 $ systemctl restart apache2 --> merestart server web\
@@ -71,12 +71,12 @@ $ systemctl disable apache2 --> menonaktifkan web server saat boot
 
 
 
-# Install PHP 7.4
+# <h3>Install PHP 7.4</h3>
 $ su\
 $ apt update\
 $ apt -y install php7.4
 
-# extension php7.4
+# <h3>extension php7.4</h3>
 $ apt -y install php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc \
 php7.4-curl php7.4-gd php7.4-imagick php7.4-cli php7.4-dev \
 php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap \
@@ -84,7 +84,7 @@ php7.4-zip php7.4-intl php7.4-cli \
 imagemagick git zip libgd-dev libapache2-mod-php 
 
 
-# edit php.ini
+# <h3>edit php.ini</h3>
 $ nano /etc/php/7.4/apache2/php.ini
 
 upload_max_filesize = 100M \
@@ -97,7 +97,7 @@ max_input_time = 1000
 $ systemctl restart apache2.service\
 $ systemctl enable apache2.service
 
-# Install MariaDB
+# <h3>Install MariaDB</h3>
 $ apt -y install mariadb-server\
 $ systemctl start mariadb\
 $ systemctl enable mariadb
@@ -112,7 +112,7 @@ Disallow root login remotely? [Y/n] y \
 Remove test database and access to it? [Y/n] y \
 Reload privilege tables now? [Y/n] y
 
-# membuat database baru:\
+# <h3>membuat database baru:</h3>
 mysql -u root -p \
 CREATE DATABASE testdb; \
 CREATE USER 'testuser' IDENTIFIED BY 'password'; \
@@ -121,7 +121,7 @@ FLUSH PRIVILEGES; \
 exit
 
 
-# jika folder root web memakai .htaccess
+# <h3>jika folder root web memakai .htaccess</h3>
 $ nano /etc/apache2/apache2.conf
 
 <Directory /var/www/> \
