@@ -17,8 +17,8 @@ $ chown -R $USER:$USER /var/www/demoapp.info/html \
 $ chmod -R 755 /var/www/demoapp.info \
 $ nano /var/www/demoapp.info/html/index.html
 
-Contoh Halaman HTML :
-https://www.w3schools.com/html/html_basic.asp
+Contoh Halaman HTML :\
+https://www.w3schools.com/html/html_basic.asp\
  *tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
