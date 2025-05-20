@@ -32,14 +32,14 @@ https://www.w3schools.com/html/html_basic.asp \
 
 $ nano /etc/apache2/sites-available/demoapp.info.conf
 
-<p><VirtualHost *:80> \
+<VirtualHost *:80> \
   ServerAdmin admin@demoapp.info \
   ServerName demoapp.info \
   ServerAlias www.demoapp.info \
   DocumentRoot /var/www/demoapp.info/html \
   ErrorLog ${APACHE_LOG_DIR}/demapperror.log \
   CustomLog ${APACHE_LOG_DIR}/demoappaccess.log combined \
-</VirtualHost> </p>
+</VirtualHost>
 *tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
