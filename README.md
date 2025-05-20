@@ -1,7 +1,7 @@
 # Konfigurasi Web Server (apache2), php 7.4, dan MariaDB (database MySQL) Debian 11
 
 
-# <h6>Download Debian 11 v.11.11.0</h6>
+# <h4>Download Debian 11 v.11.11.0</h4>
 link download : https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso
 
 # Tutrial instalasi Debian : 
