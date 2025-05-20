@@ -9,7 +9,7 @@ link : https://www.debian.org/doc/manuals/debian-handbook/sect.installation-step
 
 <br><br>
 # <h3>Install Apache 2 </h3>
-$ apt update\
+<h5>$ apt update</h5>\
 $ apt -y install apache2
 
 # <h3> Verifikasi instaltasi Apache </h3>
