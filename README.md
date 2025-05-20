@@ -19,7 +19,7 @@ $ nano /var/www/demoapp.info/html/index.html
 
 Contoh Halaman HTML : \
 https://www.w3schools.com/html/html_basic.asp \
- *tekan CTRL+X dan Y untuk menyimpan perubahan
+*tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
 $ nano /etc/apache2/sites-available/demoapp.info.conf
@@ -32,7 +32,7 @@ $ nano /etc/apache2/sites-available/demoapp.info.conf
   ErrorLog ${APACHE_LOG_DIR}/demapperror.log \
   CustomLog ${APACHE_LOG_DIR}/demoappaccess.log combined \
 </VirtualHost> 
-* tekan CTRL+X dan Y untuk menyimpan perubahan
+*tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
 # Mengaktifkan Virtual Host 
@@ -44,7 +44,7 @@ $ apache2ctl configtest
 
 $ nano /etc/apache2/conf-available/servername.conf \
 ServerName testdomain.info
-* tekan CTRL+X dan Y untuk menyimpan perubahan
+*tekan CTRL+X dan Y untuk menyimpan perubahan
 
 $ sudo a2enconf servername \
 $ systemctl reload apache2 \
@@ -121,4 +121,4 @@ $ nano /etc/apache2/apache2.conf
         AllowOverride None -->All \
         Require all granted \
 </Directory> \
-* tekan CTRL+X dan Y untuk menyimpan perubahan
+*tekan CTRL+X dan Y untuk menyimpan perubahan
