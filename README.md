@@ -43,7 +43,7 @@ $ systemctl restart apache2 \
 $ apache2ctl configtest 
 
 $ nano /etc/apache2/conf-available/servername.conf \
-ServerName testdomain.info \
+ServerName testdomain.info
 * tekan CTRL+X dan Y untuk menyimpan perubahan
 
 $ sudo a2enconf servername \
@@ -79,11 +79,11 @@ imagemagick git zip libgd-dev libapache2-mod-php
 # edit php.ini
 $ nano /etc/php/7.4/apache2/php.ini
 
-upload_max_filesize = 100M
-post_max_size = 48M
-memory_limit = 512M
-max_execution_time = 600
-max_input_vars = 5000
+upload_max_filesize = 100M \
+post_max_size = 48M \
+memory_limit = 512M \
+max_execution_time = 600 \
+max_input_vars = 5000 \
 max_input_time = 1000
 
 $ systemctl restart apache2.service\
