@@ -7,16 +7,16 @@ link download : https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/
 # <h3>Tutrial instalasi Debian : </h3>
 link : https://www.debian.org/doc/manuals/debian-handbook/sect.installation-steps.id.html
 
-<br><br>
+<br>
 # <h3>Install Apache 2 </h3>
-<h5>$ apt update</h5>\
-$ apt -y install apache2
+<h5>$ apt update</h5>
+<h5>$ apt -y install apache2</h5>
 
 # <h3> Verifikasi instaltasi Apache </h3>
-$ apache2 -version
+<h5>$ apache2 -version</h5>
 
 # <h3>Melihat Status Apache</h3>
-$ systemctl status apache2
+<h5>$ systemctl status apache2</h5>
 
 
 # <h3>Membuat Virtual Host</h3>
