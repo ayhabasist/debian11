@@ -1,5 +1,10 @@
 # Konfigurasi Web Server (apache2), php 7.4, dan MariaDB (database MySQL) Debian 11
 
+
+Download Debian 11 v.11.11\
+link download : https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso
+
+
 # Install Apache 2 
 $ apt update\
 $ apt -y install apache2
