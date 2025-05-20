@@ -19,7 +19,6 @@ $ nano /var/www/demoapp.info/html/index.html
 
 Contoh Halaman HTML :
 https://www.w3schools.com/html/html_basic.asp
-
  *tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
@@ -33,26 +32,25 @@ $ nano /etc/apache2/sites-available/demoapp.info.conf
   ErrorLog ${APACHE_LOG_DIR}/demapperror.log \
   CustomLog ${APACHE_LOG_DIR}/demoappaccess.log combined \
 </VirtualHost> 
-
 * tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
-Mengaktifkan Virtual Host 
-$ a2ensite demoapp.info.conf --> enable host
-$ a2dissite 000-default.conf --> --> disable host
+# Mengaktifkan Virtual Host 
+$ a2ensite demoapp.info.conf --> enable host \
+$ a2dissite 000-default.conf --> --> disable host\
 
-$ systemctl restart apache2
-$ apache2ctl configtest
+$ systemctl restart apache2 \
+$ apache2ctl configtest \
 
-$ nano /etc/apache2/conf-available/servername.conf
-ServerName testdomain.info
+$ nano /etc/apache2/conf-available/servername.conf \
+ServerName testdomain.info \
 * tekan CTRL+X dan Y untuk menyimpan perubahan
 
-$ sudo a2enconf servername
-$ systemctl reload apache2
-$ sudo apache2ctl configtest
+$ sudo a2enconf servername \
+$ systemctl reload apache2 \
+$ sudo apache2ctl configtest \
 
-buka browser dan ketikkan :
+buka browser dan ketikkan : \
 http://demoapp.info
 
 # Perintah pada apache
