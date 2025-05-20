@@ -97,7 +97,7 @@ $ systemctl enable mariadb
 $ mysql_secure_installation\
 Enter current password for root (enter for none): \
 Set root password? [Y/n] y \
-New password:  \
+New password: \
 Re-enter new password: \ 
 Remove anonymous users? [Y/n] y \
 Disallow root login remotely? [Y/n] y \
