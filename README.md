@@ -95,30 +95,30 @@ $ systemctl start mariadb\
 $ systemctl enable mariadb
 
 $ mysql_secure_installation\
-Enter current password for root (enter for none): 
-Set root password? [Y/n] y
-New password: 
-Re-enter new password: 
-Remove anonymous users? [Y/n] y
-Disallow root login remotely? [Y/n] y
-Remove test database and access to it? [Y/n] y
+Enter current password for root (enter for none): \
+Set root password? [Y/n] y \
+New password:  \
+Re-enter new password: \ 
+Remove anonymous users? [Y/n] y \
+Disallow root login remotely? [Y/n] y \
+Remove test database and access to it? [Y/n] y \
 Reload privilege tables now? [Y/n] y
 
 # membuat database baru:\
-mysql -u root -p
-CREATE DATABASE testdb;
-CREATE USER 'testuser' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON testdb.* TO 'testuser';
-FLUSH PRIVILEGES;
+mysql -u root -p \
+CREATE DATABASE testdb; \
+CREATE USER 'testuser' IDENTIFIED BY 'password'; \
+GRANT ALL PRIVILEGES ON testdb.* TO 'testuser'; \
+FLUSH PRIVILEGES; \
 exit
 
 
 # jika folder root web memakai .htaccess
 $ nano /etc/apache2/apache2.conf
 
-<Directory /var/www/>
-        Options Indexes FollowSymLinks
-        AllowOverride None -->All
-        Require all granted
-</Directory>
+<Directory /var/www/> \
+        Options Indexes FollowSymLinks \
+        AllowOverride None -->All \
+        Require all granted \
+</Directory> \
 * tekan CTRL+X dan Y untuk menyimpan perubahan
