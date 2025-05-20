@@ -37,10 +37,10 @@ $ nano /etc/apache2/sites-available/demoapp.info.conf
 
 # Mengaktifkan Virtual Host 
 $ a2ensite demoapp.info.conf --> enable host \
-$ a2dissite 000-default.conf --> --> disable host\
+$ a2dissite 000-default.conf --> --> disable host
 
 $ systemctl restart apache2 \
-$ apache2ctl configtest \
+$ apache2ctl configtest 
 
 $ nano /etc/apache2/conf-available/servername.conf \
 ServerName testdomain.info \
@@ -48,7 +48,7 @@ ServerName testdomain.info \
 
 $ sudo a2enconf servername \
 $ systemctl reload apache2 \
-$ sudo apache2ctl configtest \
+$ sudo apache2ctl configtest 
 
 buka browser dan ketikkan : \
 http://demoapp.info
@@ -63,12 +63,12 @@ $ systemctl disable apache2 --> menonaktifkan web server saat boot
 
 
 
-Install PHP 7.4
+# Install PHP 7.4
 $ su
 $ apt update
 $ apt -y install php7.4
 
-extension php7.4
+# extension php7.4
 $ apt -y install php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc \
 php7.4-curl php7.4-gd php7.4-imagick php7.4-cli php7.4-dev \
 php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap \
@@ -76,7 +76,7 @@ php7.4-zip php7.4-intl php7.4-cli \
 imagemagick git zip libgd-dev libapache2-mod-php 
 
 
-edit php.ini
+# edit php.ini
 $ nano /etc/php/7.4/apache2/php.ini
 
 upload_max_filesize = 100M
@@ -94,7 +94,7 @@ $ apt -y install mariadb-server
 $ systemctl start mariadb
 $ systemctl enable mariadb
 
-$mysql_secure_installation
+$ mysql_secure_installation
 Enter current password for root (enter for none): 
 Set root password? [Y/n] y
 New password: 
@@ -113,7 +113,7 @@ FLUSH PRIVILEGES;
 exit
 
 
-jika folder root web memakai .htaccess
+# jika folder root web memakai .htaccess
 $ nano /etc/apache2/apache2.conf
 
 <Directory /var/www/>
