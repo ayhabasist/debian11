@@ -1,0 +1,85 @@
+INSTAL DAN KONFIGURASI WEB SERVER(APACHE), PHP 7.4, DAN DATABASE MYSQL DEBIAN 11
+
+Install Apache 2
+$ apt update
+$ apt -y install apache2
+
+Verifikasi instaltasi Apache
+$ apache2 -version
+
+Melihat Status Apache
+$ systemctl status apache2
+
+
+Membuat Virtual Host
+$ mkdir -p /var/www/demoapp.info/html
+$ chown -R $USER:$USER /var/www/demoapp.info/html
+$ chmod -R 755 /var/www/demoapp.info
+$ nano /var/www/demoapp.info/html/index.html
+
+Contoh Halaman HTML :
+<html>
+<head>
+<title>Welcome to the page demoapp.info!</title>
+</head>
+<body>
+<h1>Your demoapp.info serveris up!</h1>
+</body>
+</html>
+
+# tekan CTRL+X dan Y untuk menyimpan perubahan
+
+
+$ nano /etc/apache2/sites-available/demoapp.info.conf
+
+<VirtualHost *:80>
+  ServerAdmin admin@demoapp.info
+  ServerName demoapp.info
+  ServerAlias www.demoapp.info
+  DocumentRoot /var/www/demoapp.info/html
+  ErrorLog ${APACHE_LOG_DIR}/demapperror.log
+  CustomLog ${APACHE_LOG_DIR}/demoappaccess.log combined
+</VirtualHost>
+
+# tekan CTRL+X dan Y untuk menyimpan perubahan
+
+
+Mengaktifkan Virtual Host 
+$ a2ensite demoapp.info.conf --> enable host
+$ a2dissite 000-default.conf --> --> disable host
+
+$ systemctl restart apache2
+$ apache2ctl configtest
+
+$ nano /etc/apache2/conf-available/servername.conf
+ServerName testdomain.info
+# tekan CTRL+X dan Y untuk menyimpan perubahan
+
+$ sudo a2enconf servername
+$ systemctl reload apache2
+$ sudo apache2ctl configtest
+
+buka browser dan ketikkan :
+http://demoapp.info
+
+# Perintah pada apache
+$ systemctl start apache2 --> menjalankan server web
+$ systemctl stop apache2 --> mematikan server web
+$ systemctl restart apache2 --> merestart server web
+$ systemctl reload apache2 --> mereload server web
+$ systemctl enable apache2 --> mengatifkan starup boot web server  
+$ systemctl disable apache2 --> menonaktifkan web server saat boot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
