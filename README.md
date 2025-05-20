@@ -54,18 +54,18 @@ buka browser dan ketikkan : \
 http://demoapp.info
 
 # Perintah pada apache
-$ systemctl start apache2 --> menjalankan server web
-$ systemctl stop apache2 --> mematikan server web
-$ systemctl restart apache2 --> merestart server web
-$ systemctl reload apache2 --> mereload server web
-$ systemctl enable apache2 --> mengatifkan starup boot web server  
+$ systemctl start apache2 --> menjalankan server web\
+$ systemctl stop apache2 --> mematikan server web\
+$ systemctl restart apache2 --> merestart server web\
+$ systemctl reload apache2 --> mereload server web\
+$ systemctl enable apache2 --> mengatifkan starup boot web server  \
 $ systemctl disable apache2 --> menonaktifkan web server saat boot
 
 
 
 # Install PHP 7.4
-$ su
-$ apt update
+$ su\
+$ apt update\
 $ apt -y install php7.4
 
 # extension php7.4
@@ -86,15 +86,15 @@ max_execution_time = 600
 max_input_vars = 5000
 max_input_time = 1000
 
-$ systemctl restart apache2.service
+$ systemctl restart apache2.service\
 $ systemctl enable apache2.service
 
 # Install MariaDB
-$ apt -y install mariadb-server
-$ systemctl start mariadb
+$ apt -y install mariadb-server\
+$ systemctl start mariadb\
 $ systemctl enable mariadb
 
-$ mysql_secure_installation
+$ mysql_secure_installation\
 Enter current password for root (enter for none): 
 Set root password? [Y/n] y
 New password: 
