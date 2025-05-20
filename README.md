@@ -18,8 +18,7 @@ $ chmod -R 755 /var/www/demoapp.info
 $ nano /var/www/demoapp.info/html/index.html
 
 Contoh Halaman HTML :
-
-. <html><head><title>Welcome to the page demoapp.info!</title></head><body><h1>Your demoapp.info serveris up!</h1></body></html>
+https://www.w3schools.com/html/html_basic.asp
 
  *tekan CTRL+X dan Y untuk menyimpan perubahan
 
