@@ -9,14 +9,14 @@ link : https://www.debian.org/doc/manuals/debian-handbook/sect.installation-step
 
 <br>
 # <h3>Install Apache 2 </h3>
-<h5>$ apt update</h5>
-<h5>$ apt -y install apache2</h5>
+$ apt update
+$ apt -y install apache2
 
 # <h3> Verifikasi instaltasi Apache </h3>
-<h5>$ apache2 -version</h5>
+$ apache2 -version
 
 # <h3>Melihat Status Apache</h3>
-<h5>$ systemctl status apache2</h5>
+$ systemctl status apache2
 
 
 # <h3>Membuat Virtual Host</h3>
