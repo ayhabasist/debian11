@@ -12,9 +12,9 @@ $ systemctl status apache2
 
 
 # Membuat Virtual Host
-$ mkdir -p /var/www/demoapp.info/html
-$ chown -R $USER:$USER /var/www/demoapp.info/html
-$ chmod -R 755 /var/www/demoapp.info
+$ mkdir -p /var/www/demoapp.info/html \
+$ chown -R $USER:$USER /var/www/demoapp.info/html \
+$ chmod -R 755 /var/www/demoapp.info \
 $ nano /var/www/demoapp.info/html/index.html
 
 Contoh Halaman HTML :
