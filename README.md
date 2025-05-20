@@ -1,10 +1,10 @@
-INSTAL DAN KONFIGURASI WEB SERVER(APACHE), PHP 7.4, DAN DATABASE MYSQL DEBIAN 11
+#INSTAL DAN KONFIGURASI WEB SERVER(APACHE), PHP 7.4, DAN DATABASE MYSQL DEBIAN 11
 
-Install Apache 2 \
+#Install Apache 2 \
 $ apt update\
-$ apt -y install apache2\
+$ apt -y install apache2
 
-Verifikasi instaltasi Apache
+#Verifikasi instaltasi Apache\
 $ apache2 -version
 
 Melihat Status Apache
