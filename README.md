@@ -18,16 +18,17 @@ $ chmod -R 755 /var/www/demoapp.info
 $ nano /var/www/demoapp.info/html/index.html
 
 Contoh Halaman HTML :
+
 <html>
 <head>
 <title>Welcome to the page demoapp.info!</title>
 </head>
 <body>
-<h1>Your demoapp.info serveris up!</h1>
+ <h1>Your demoapp.info serveris up!</h1>
 </body>
 </html>
 
-# tekan CTRL+X dan Y untuk menyimpan perubahan
+ *tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
 $ nano /etc/apache2/sites-available/demoapp.info.conf
@@ -41,7 +42,7 @@ $ nano /etc/apache2/sites-available/demoapp.info.conf
   CustomLog ${APACHE_LOG_DIR}/demoappaccess.log combined
 </VirtualHost>
 
-# tekan CTRL+X dan Y untuk menyimpan perubahan
+* tekan CTRL+X dan Y untuk menyimpan perubahan
 
 
 Mengaktifkan Virtual Host 
@@ -53,7 +54,7 @@ $ apache2ctl configtest
 
 $ nano /etc/apache2/conf-available/servername.conf
 ServerName testdomain.info
-# tekan CTRL+X dan Y untuk menyimpan perubahan
+* tekan CTRL+X dan Y untuk menyimpan perubahan
 
 $ sudo a2enconf servername
 $ systemctl reload apache2
@@ -130,4 +131,4 @@ $ nano /etc/apache2/apache2.conf
         AllowOverride None -->All
         Require all granted
 </Directory>
-# tekan CTRL+X dan Y untuk menyimpan perubahan
+* tekan CTRL+X dan Y untuk menyimpan perubahan
