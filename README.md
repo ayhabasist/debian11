@@ -130,3 +130,12 @@ $ nano /etc/apache2/apache2.conf
         Require all granted \
 </Directory> \
 *tekan CTRL+X dan Y untuk menyimpan perubahan
+
+
+# <h3>backup database:</h3>
+mysqldump -u database_username -p database_name > /home/username_SSH/www/backup/backup_database.sql
+
+# <h3>restore database:</h3>
+mysql -u database_username -p database_name < /home/username_SSH/www/backup/backup_database.sql
+
+
