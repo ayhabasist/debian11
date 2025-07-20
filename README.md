@@ -8,12 +8,12 @@ link download : https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/
 link : https://www.debian.org/doc/manuals/debian-handbook/sect.installation-steps.id.html
 
 # <h3>install SSH </h3>
-$ apt update 
+$ apt update \
 $ apt install openssh-server
 
 # setting ssh permission
-$ nano /etc/ssh/sshd_config
-- PermitRootLogin yes
+$ nano /etc/ssh/sshd_config\
+- PermitRootLogin yes\
 $ systemctl restart sshd
 
 # <h3>Install Apache 2 </h3>
