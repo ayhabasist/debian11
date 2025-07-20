@@ -139,7 +139,7 @@ $ nano /etc/apache2/apache2.conf
 </Directory> \
 *tekan CTRL+X dan Y untuk menyimpan perubahan \
 
-a2enmod rewrite
+$ a2enmod rewrite
 
 
 
