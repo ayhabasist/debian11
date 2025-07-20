@@ -137,7 +137,10 @@ $ nano /etc/apache2/apache2.conf
         AllowOverride None -->All \
         Require all granted \
 </Directory> \
-*tekan CTRL+X dan Y untuk menyimpan perubahan
+*tekan CTRL+X dan Y untuk menyimpan perubahan \
+
+a2enmod rewrite
+
 
 
 # <h3>backup database:</h3>
