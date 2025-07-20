@@ -11,8 +11,8 @@ link : https://www.debian.org/doc/manuals/debian-handbook/sect.installation-step
 $ apt update \
 $ apt install openssh-server
 
-# setting ssh permission
-$ nano /etc/ssh/sshd_config\
+# <h5>setting ssh permission <h5>
+$ nano /etc/ssh/sshd_config
 - PermitRootLogin yes\
 $ systemctl restart sshd
 
